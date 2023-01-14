@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    color: #FCE181;
+    background-color: #026670;
+    min-height: 100%;
+}
+.Main{
+    display:flex;
+    flex-direction: column;
+}
+.Header{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.title{
+    font-size: 5em;
+    letter-spacing: 15px;
+}
+.content-container{
+    display: flex;
+}
+.radioBtn{
+    transform: scale(4);
+}
+.formBmi{
+    animation: 1s slide-right;
+    font-size: 4em;
+    justify-content: center;
+    margin-left: 3%;
+    margin-top: 5%;
+    text-align: center;
+    width: 30%;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+@keyframes slide-right {
+    from{
+        margin-left:200%
+    }
+    to{
+        margin-left:3%;
+    }
+}
+.formBmi > *{
+    vertical-align: middle;
+}
+.inputForm{
+    font-size: 0.5em;
+    padding: 5%;
+    width: 70%;
+    border-radius: 5%;
+}
+.labeltag{
+     margin-right:5%;
+}
+.result{
+    text-align: center;
+    justify-content: center;
+    flex:1;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content;
+    margin-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 1%;
+}
+.sendBtn{
+    border-radius: 5%;
+    margin-top:4%;
+    padding: 20px;
+    font-size: 1em;
+    width: 100%;
+    color:#501F3A;
+    background-color: #9FEDD7;
+}
+.sendBtn:hover{
+    transition: 0.5s all;
+    background-color:#501F3A;
+    color: #9FEDD7;
+}
+.lowerP{
+    font-size: 2em;
+}
+
+.mainResult{
+    border: 2px solid red;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    font-size: 3em;
+}
+
+.Normal, .Underweight, .Pre-obesity ,.Obesity-class-I, .Obesity-class-II, .Obesity-class-III{
+    margin-top:10%;
+    margin-bottom: 10%;
+}
+
+.Obesity-class-III{
+    font-size: 5em;
+    color:white;
+    border-radius: 5%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: #ff0008;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.Normal{
+    font-size: 5em;
+    color:white;
+    border-radius: 5%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: #00f78c;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.Underweight{
+    font-size: 5em;
+    color:white;
+    border-radius: 5%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: #007cf7;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.Pre-obesity{
+    font-size: 5em;
+    color:white;
+    border-radius: 5%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: #eff700;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.Obesity-class-I{
+    font-size: 5em;
+    color:white;
+    border-radius: 5%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: #eda302;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.Obesity-class-II{
+    font-size: 5em;
+    color:white;
+    border-radius: 5%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color:#ff6a00;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.right-container{
+    margin-top:1%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.legend{
+    text-align: center;
+    justify-content:left;
+    align-items: flex-end;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content;
+    margin-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 1%;
+}
+.legendcell-obesity3{
+    width: 20%;
+    height: 20%;
+    background-color: red;
+}
+.legendtable{
+    font-size: 0.7em;
+    width: 100%;
+}
+tr:hover{
+    background-color: #501F3A;
+    transition: 0.5s all;
+}
+.points{
+    font-size: 4em;
+}
+.here{
+    font-size: 4em;
+    text-align: center;
+    
+}
